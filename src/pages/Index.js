@@ -10,18 +10,21 @@ export default function Index(props){
 
     return (<>
      <h1>RawleTube</h1>
-    {videos.map((video, index) => {
-        return (
-        <>
-       
-
-        <div className ='videocontainer' key={index}>
-            {videoCard(video)}
+        <div className="videocontainer">
+            {videos.map((video, index) => {
+                return (
+                    <>
+                        <div key={index}>
+                        {videoCard(video)}
+                        </div>
+                    </>
+                        )
+        
+    
+                    }
+                )
+                }
         </div>
-   
-        </>
-        )
-    })}
     
     
     </>)

@@ -1,7 +1,7 @@
 import {Form, Link} from 'react-router-dom'
 import { useLoaderData } from 'react-router-dom'
 import videoCard from '../components/videocard'
-
+import CreateForm from '../components/createform'
 
 export default function Index(props){
 
@@ -9,8 +9,11 @@ export default function Index(props){
 
 
     return (<>
-     <h1>RawleTube</h1>
-        <div className="videocontainer">
+        <h1 className='yourvideos'> Your Videos:</h1>
+        <div className="createform">
+        <CreateForm/>
+        </div>
+        <div className="videocontainer" key="container">
             {videos.map((video, index) => {
                 return (
                     <>
@@ -19,8 +22,6 @@ export default function Index(props){
                         </div>
                     </>
                         )
-        
-    
                     }
                 )
                 }

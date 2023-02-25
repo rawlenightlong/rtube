@@ -1,7 +1,15 @@
 .App {
-  text-align: center;
   display: grid;
   grid-template-columns: 1fr 4fr;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+
+.yourvideos{
+  text-align: center;
+}
+grid-column-1 {
+  background-color: black;;
 }
 
 
@@ -53,7 +61,8 @@ h1 {
   row-gap: 20px;
   max-width: 70%;
   padding: 20px;
-  margin: 0 auto;
+  margin: auto ;
+  margin-top: 5vh;
   grid-column-start: 2;
 }
 
@@ -69,11 +78,46 @@ h1 {
   text-align: center;
   box-shadow: 3px 3px 3px;
 }
+.videocard a {
+  color: black;
+  text-decoration: none;
+}
 
-img {
+.videocard img {
   max-width: 100%;
   border: 2px solid black;
   border-radius: 40px;
   box-shadow: 2px 2px 3px;
-  
+}
+
+.showvideo {
+  grid-column-start: 2;
+  padding: 20px;
+  margin-top: 10vh;
+}
+.buttons {
+  text-align: center;
+  margin: 20px;
+  padding: 10px;
+}
+.icon {
+height: 40px;
+padding-top: 15px;
+padding-right:5px;
+}
+
+.nav {
+  position: absolute;
+  grid-column-start: 1;
+  display: flex;
+  margin: auto auto;
+  margin-left: 2vw;
+  height: 100px;
+  color: black;
+}
+.createform {
+ grid-column-start: 1;
+  padding: 20px;
+  margin: auto;
+  text-align: center;
 }

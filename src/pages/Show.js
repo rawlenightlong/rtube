@@ -1,8 +1,30 @@
+import { Form } from "react-router-dom"
+import { useLoaderData } from "react-router-dom"
+import UpdateForm from "../components/updateform"
+import VideoCard from "../components/videocard"
+
 export default function Show(props){
+
+    const video = useLoaderData()
+    
     return(
-        <div>
-            <h1>Show</h1>
-            <p>This is the show page</p>
+        <div className='showvideo'>
+            {VideoCard(video)}
+            <div className='buttons'>
+                <Form 
+                action={`/videos/delete/${video.id}`}
+                method='DELETE'
+                >
+                    <button>Delete {video.name}</button>
+                </Form>
+                <Form
+                action={`/videos/update/${video.id}`}
+                method="PUT">
+                <button>Edit {video.name}</button>
+                </Form>
+                <UpdateForm video={video}/>
+                
+            </div>
         </div>
     )
 }

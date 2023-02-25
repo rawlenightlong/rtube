@@ -59,7 +59,7 @@ h1 {
   flex-wrap: wrap;
   justify-content: space-around;
   row-gap: 20px;
-  max-width: 70%;
+  max-width: 65%;
   padding: 20px;
   margin: auto ;
   margin-top: 5vh;
@@ -77,6 +77,11 @@ h1 {
   align-items: center;
   text-align: center;
   box-shadow: 3px 3px 3px;
+  transition: .2s;
+}
+
+.videocard:hover {
+  transform: scale(1.05)
 }
 .videocard a {
   color: black;
@@ -110,10 +115,15 @@ padding-right:5px;
   position: absolute;
   grid-column-start: 1;
   display: flex;
-  margin: auto auto;
-  margin-left: 2vw;
+  margin-top: 3vh;
+  margin-left: 3vw;
   height: 100px;
   color: black;
+  transition: .2s;
+}
+
+.nav:hover {
+  transform: scale(1.1)
 }
 .createform {
  grid-column-start: 1;
@@ -121,3 +131,20 @@ padding-right:5px;
   margin: auto;
   text-align: center;
 }
+
+.createform input[type="text"]{
+  width: 60%;
+  margin: 6px;
+}
+
+.updateform {
+  grid-column-start: 1;
+   padding: 20px;
+   margin: auto;
+   text-align: center;
+ }
+
+ .updateform input[type="text"] {
+  width: 30%;
+  margin: 6px;
+ }

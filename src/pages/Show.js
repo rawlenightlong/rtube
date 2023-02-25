@@ -6,6 +6,7 @@ import VideoCard from "../components/videocard"
 export default function Show(props){
 
     const video = useLoaderData()
+
     
     return(
         <div className='showvideo'>

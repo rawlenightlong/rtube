@@ -7,7 +7,7 @@ export default function Show(props){
 
     const video = useLoaderData()
     const embedId = video.link.split("=")[1].split("&")[0]
-    console.log(embedId)
+
 
     
     return(

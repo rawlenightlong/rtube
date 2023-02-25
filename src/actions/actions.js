@@ -1,8 +1,10 @@
 import { redirect } from "react-router-dom"
+import {useState} from "react"
 
 const url = "https://rawletubeapi.onrender.com/videos/"
 
 export const createAction = async function ({request}){
+    let newID = ''
     const formData = await request.formData()
     const newVideo = {
         name: formData.get("name"),
@@ -15,8 +17,15 @@ export const createAction = async function ({request}){
             "Content-Type": "application/json"
         }
     })
+    const response = await fetch(url)
+    const videos = await response.json()
+    for (let video of videos){
+        if (video.link === newVideo.link){
+            newID = video.id
+        }
+    }
 
-    return redirect(`/videos/${newVideo.id}`)
+    return redirect(`/videos/${newID}`)
 }
 
 export const updateAction = async function ({request, params}){

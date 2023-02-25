@@ -6,6 +6,7 @@ import VideoCard from "../components/videocard"
 export default function Show(props){
 
     const video = useLoaderData()
+    const embedId = video.link.split("=")[1]
 
     
     return(
@@ -17,8 +18,10 @@ export default function Show(props){
                 method='DELETE'
                 >
                     <button>Delete {video.name}</button>
-                </Form>
-
+                </Form> <br></br>
+                <iframe width="560" height="315" src={`https://www.youtube.com/embed/${embedId}`}>
+        
+                </iframe>
                 <UpdateForm video={video}/>
                 
             </div>

@@ -17,11 +17,7 @@ export default function Show(props){
                 >
                     <button>Delete {video.name}</button>
                 </Form>
-                <Form
-                action={`/videos/update/${video.id}`}
-                method="PUT">
-                <button>Edit {video.name}</button>
-                </Form>
+
                 <UpdateForm video={video}/>
                 
             </div>

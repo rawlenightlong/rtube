@@ -1,8 +1,7 @@
-import {Form, Link} from 'react-router-dom'
 import { useLoaderData } from 'react-router-dom'
 import videoCard from '../components/videocard'
 import CreateForm from '../components/createform'
-import tunnelvideo from "../assets/tunnel.mp4"
+
 
 
 export default function Index(props){

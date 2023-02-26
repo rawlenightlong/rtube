@@ -20,7 +20,7 @@ export default function VideoCard(props){
 
     return (<>
     <div className='videocard'>
-        <a href={props.link} target="_blank" rel="noopener"><img src={thumbID} alt='thumbnail'/></a>
+        <a href={props.link} target="_blank" rel="noreferrer"><img src={thumbID} alt='thumbnail'/></a>
         <Link to={`${props.id}/`} className='showlink'><h4>{props.name}</h4></Link>
 
     </div>

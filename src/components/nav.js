@@ -4,7 +4,10 @@ export default function Nav(props){
     return (<>
     <Link to='/videos'>
         <nav className="nav">
-            <img src="https://i.imgur.com/iKvGe2P.png" alt=''className ='icon'/><h1>RawleTube</h1>
+            <div className="logo">
+                <img src="https://i.imgur.com/iKvGe2P.png" alt=''className ='icon'/>
+            </div>
+            <h1>RawleTube</h1>
         </nav>
     </Link>
     </>)

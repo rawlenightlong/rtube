@@ -1,6 +1,7 @@
 import thumbnail from "../actions/thumbnailLoader"
 import { useState } from "react"
-import { Link } from "react-router-dom"
+import { Link, Form } from "react-router-dom"
+
 
 export default function VideoCard(props){
     
@@ -21,7 +22,9 @@ export default function VideoCard(props){
     <div className='videocard'>
         <a href={props.link} target="_blank"><img src={thumbID} alt='thumbnail'/></a>
         <Link to={`${props.id}/`} className='showlink'><h4>{props.name}</h4></Link>
+
     </div>
+    
 
     </>)
 }

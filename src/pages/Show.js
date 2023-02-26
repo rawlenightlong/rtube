@@ -12,7 +12,7 @@ export default function Show(props){
     
     return(
         <div className='showvideo'>
-            {VideoCard(video)}
+            <div className="showvideocard">{VideoCard(video)}</div>
             <div className='buttons'>
                 <Form 
                 action={`/videos/delete/${video.id}`}

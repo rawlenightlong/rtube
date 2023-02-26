@@ -1,69 +1,76 @@
 .App {
-  display: grid;
-  grid-template-columns: 1fr 4fr;
   font-family: Arial, Helvetica, sans-serif
 }
-
-
-.yourvideos{
-  text-align: center;
+h2 {
+  color: white;
 }
-grid-column-1 {
-  background-color: black;;
+body {
+  background-image: url('https://images2.alphacoders.com/671/671306.jpg')
 }
-
-
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.indexpage {
+  display: flex;
+  justify-content: center;
+  min-height: 50em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media all and (min-width: 370px){
+  iframe {
+    text-align: center;
+    margin: auto;
+    width: 300px;
+    height: 175px;
+    }
+
+  }
+
+@media all and (max-width: 540px){
+  iframe {
+    width: 355px;
+    height: 200px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+@media all and (max-width: 820px){
+
+.indexpage {
+  display: block;
+  }
+}
+
+@media all and (max-width: 820px){
+  .createform {
+    width: 60%;
+  }
+}
+
+.yours {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+header {
+  padding-left: 2em;
+  background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(139, 139, 229), black)
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
-h1 {
-  grid-column-start: 2;
-}
 .videocontainer {
-  background-color: yellow;
   text-align: center;
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
   justify-content: space-around;
   row-gap: 20px;
-  max-width: 65%;
+  max-width: 70%;
   padding: 20px;
   margin: auto ;
-  margin-top: 5vh;
-  grid-column-start: 2;
+
+}
+
+.videos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 3vh;
+  border-radius: 10px;;
+
 }
 
 .videocard {
@@ -71,17 +78,20 @@ h1 {
   border-radius: 30px;
   border: 3px solid black;
   padding: 20px;
-  margin: 0 auto;
-  width: 300px;
+  margin: 10px;
+  width: 15rem;
   height: 240px;
   align-items: center;
   text-align: center;
   box-shadow: 3px 3px 3px;
-  transition: .4s;
+  transition: .5s;
+  opacity: .6;
+  
 }
 
 .videocard:hover {
-  transform: scale(1.05)
+  transform: scale(1.05);
+  opacity: 1;
 }
 .videocard a {
   color: black;
@@ -95,11 +105,12 @@ h1 {
   box-shadow: 2px 2px 3px;
 }
 
-.showvideo {
-  grid-column-start: 2;
-  padding: 20px;
-  margin-top: 10vh;
+
+.showvideocard {
+  display: flex;
+  justify-content: center;
 }
+
 .buttons {
   text-align: center;
   margin: 20px;
@@ -110,36 +121,37 @@ height: 40px;
 padding-top: 15px;
 padding-right:11px;
 }
-
+.nav a {
+  text-decoration: none;
+  color: white;
+}
 .nav {
-  position: absolute;
-
-  grid-column-start: 1;
+  width:13em;
   display: flex;
-  margin-top: 3vh;
-  margin-left: 3vw;
-  height: 100px;
   color: black;
-  transition: .4s;
+  transition: .2s;
+}
+.nav:hover{
+transform: scale(1.1);
 }
 
-.nav:hover {
-  transform: scale(1.1)
-}
 .createform {
- grid-column-start: 1;
-  padding: 20px;
-  margin: auto;
+  padding-bottom: 20px;
+  margin: auto ;
   text-align: center;
+  background-color: rgba(255, 255, 255, .5);
+  border-radius: 5px;
+
 }
 
 .createform input[type="text"]{
+  height: 1.5;
   width: 60%;
   margin: 6px;
 }
 
 .updateform {
-  grid-column-start: 1;
+
    padding: 20px;
    margin: auto;
    text-align: center;
@@ -149,3 +161,24 @@ padding-right:11px;
   width: 30%;
   margin: 6px;
  }
+
+ .footer {
+
+  height:24px;
+  width: 100%;
+  background-image: linear-gradient(to bottom left, rgb(0, 0, 0), rgb(139, 139, 229));
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-position: 0% 0%;
+  position: fixed;
+  bottom: 0pt;
+  left: 0pt;
+
+}   
+
+.footer_contents {
+  height:24px; 
+  width: 1000px;
+  margin:auto;
+
+}

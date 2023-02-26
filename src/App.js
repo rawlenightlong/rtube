@@ -1,16 +1,17 @@
-
+import Footer from './components/footer';
 import './App.css';
-import Index from './pages/Index';
+
 
 import { Outlet } from 'react-router-dom';
 import CreateForm from './components/createform';
-import Nav from './components/nav';
+import Nav2 from './components/nav2';
 
 function App() {
   return (
     <div className="App">
-      <Nav/>
+      <header><Nav2/></header>
         <Outlet/>
+        <footer><Footer/></footer>
     </div>
   );
 }

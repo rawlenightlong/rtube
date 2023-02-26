@@ -20,7 +20,7 @@ export default function Show(props){
                 >
                     <button>Delete {video.name}</button>
                 </Form> <br></br>
-                <iframe width="560" height="315" src={`https://www.youtube.com/embed/${embedId}`}>
+                <iframe title="video" width="560" height="315" src={`https://www.youtube.com/embed/${embedId}`}>
         
                 </iframe>
                 <UpdateForm video={video}/>

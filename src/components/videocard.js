@@ -7,13 +7,12 @@ export default function VideoCard(props){
     
     const id = props.link.split('=')[1]
 
-    const url = `https://www.googleapis.com/youtube/v3/videos?id=${id}&key=AIzaSyDSCKTeAgY144-IOYpKZLqTZRdrYC7DLaU&part=snippet`
+    const url = `https://www.googleapis.com/youtube/v3/videos?id=${id}&key=AIzaSyCzuLuvUaTOInTwoBndYZVqUxIzunmXnUc&part=snippet`
 
     const [thumbID, setThumbID] = useState(null)
     
     thumbnail(url)
     .then(data => {
-        console.log(data)
         const thumbID = data.items[0].snippet.thumbnails.medium.url
         setThumbID(thumbID)
     })

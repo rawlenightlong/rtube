@@ -11,12 +11,12 @@ export default function VideoCard(props){
 
     const [thumbID, setThumbID] = useState(null)
     
-    // thumbnail(url)
-    // .then(data => {
-    //     console.log(data)
-    //     const thumbID = data.items[0].snippet.thumbnails.medium.url
-    //     setThumbID(thumbID)
-    // })
+    thumbnail(url)
+    .then(data => {
+        console.log(data)
+        const thumbID = data.items[0].snippet.thumbnails.medium.url
+        setThumbID(thumbID)
+    })
 
     return (<>
     <div className='videocard'>

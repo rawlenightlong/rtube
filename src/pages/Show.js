@@ -15,7 +15,7 @@ export default function Show(props){
             <div className="showvideocard">{VideoCard(video)}</div>
             <div className='buttons'>
                 <Form 
-                action={`/videos/delete/${video.id}`}
+                action={`/delete/${video.id}`}
                 method='DELETE'
                 >
                     <button>Delete {video.name}</button>

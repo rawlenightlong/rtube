@@ -1,12 +1,15 @@
 .App {
   font-family: Arial, Helvetica, sans-serif
 }
+
 h2 {
   color: white;
 }
+
 body {
   background-image: url('https://images2.alphacoders.com/671/671306.jpg')
 }
+
 .indexpage {
   display: flex;
   justify-content: center;
@@ -20,7 +23,6 @@ body {
     width: 300px;
     height: 175px;
     }
-
   }
 
 @media all and (max-width: 540px){
@@ -52,50 +54,52 @@ header {
   background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(139, 139, 229), black)
 }
 
-
 .videocontainer {
   text-align: center;
   display: block;
   justify-content: space-around;
   row-gap: 20px;
-  max-width: 70%;
+  max-width: 65%;
   padding: 20px;
   margin: auto ;
-
 }
 
 .videos {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  row-gap: 3vh;
-  border-radius: 10px;;
-
+  row-gap: 1vh;
+  border-radius: 10px;
 }
 
 .videocard {
-  background-color: #FF0000;
+  background-color: rgb(139, 139, 229);
   border-radius: 30px;
   border: 3px solid black;
   padding: 20px;
   margin: 10px;
   width: 15rem;
-  height: 240px;
+  height: 200px;
   align-items: center;
   text-align: center;
   box-shadow: 3px 3px 3px;
   transition: .5s;
-  opacity: .6;
-  
+  opacity: .7;
 }
 
 .videocard:hover {
   transform: scale(1.05);
   opacity: 1;
 }
+
 .videocard a {
   color: black;
   text-decoration: none;
+}
+
+.showlink:hover{
+  color: white;
+  transition: .1s;
 }
 
 .videocard img {
@@ -104,7 +108,6 @@ header {
   border-radius: 40px;
   box-shadow: 2px 2px 3px;
 }
-
 
 .showvideocard {
   display: flex;
@@ -116,21 +119,25 @@ header {
   margin: 20px;
   padding: 10px;
 }
+
 .icon {
 height: 40px;
 padding-top: 15px;
 padding-right:11px;
 }
+
 .nav a {
   text-decoration: none;
   color: white;
 }
+
 .nav {
   width:13em;
   display: flex;
   color: black;
   transition: .2s;
 }
+
 .nav:hover{
 transform: scale(1.1);
 }
@@ -139,9 +146,8 @@ transform: scale(1.1);
   padding-bottom: 20px;
   margin: auto ;
   text-align: center;
-  background-color: rgba(255, 255, 255, .5);
-  border-radius: 5px;
-
+  background-color: rgba(255, 255, 255, .09);
+  border-radius: 25px;
 }
 
 .createform input[type="text"]{

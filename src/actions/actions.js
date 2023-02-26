@@ -25,7 +25,7 @@ export const createAction = async function ({request}){
         }
     }
 
-    return redirect(`/videos/${newID}`)
+    return redirect(`/${newID}`)
 }
 
 export const updateAction = async function ({request, params}){
@@ -41,12 +41,12 @@ export const updateAction = async function ({request, params}){
             "Content-Type": "application/json"
         }
     })
-    return redirect("/videos")
+    return redirect("/")
 }
 
 export const deleteAction = async function({params}){
     await fetch(url + params.id + '/', {
         method: "DELETE"
     })
-    return redirect("/videos")
+    return redirect("/")
 }

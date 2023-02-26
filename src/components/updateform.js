@@ -4,7 +4,7 @@ function UpdateForm(props){
     return (<>
         <div className='updateform'>
         <h2>Update Video</h2>
-        <Form action={`/videos/update/${props.video.id}`} method="put">
+        <Form action={`/update/${props.video.id}`} method="put">
 
            <input type='text' name='name' placeholder='Update video title' required defaultValue={props.video.name} size="20">
             

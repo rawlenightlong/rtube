@@ -5,9 +5,9 @@ export default function Nav(props){
         <header>
         <nav className="nav">
             <div className="logo">
-                <img src="https://i.imgur.com/iKvGe2P.png" alt=''className ='icon'/>
+                <Link to='/videos/'><img src="https://i.imgur.com/iKvGe2P.png" alt=''className ='icon'/></Link>
             </div>
-            <Link to='/videos'><h1>RawleTube</h1></Link>
+            <Link to='/videos/'><h1>RawleTube</h1></Link>
         </nav>
         </header>
     </>)

@@ -155,6 +155,9 @@ transform: scale(1.1);
   width: 60%;
   margin: 6px;
 }
+.inputbutton {
+  background-color: white;
+}
 
 .updateform {
 

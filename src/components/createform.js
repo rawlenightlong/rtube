@@ -8,7 +8,7 @@ function CreateForm(props){
             <input type='text' name='name' placeholder='Enter video title' required>
             </input>
             <input type='text' name='link' placeholder='Paste your video link' required></input><br></br>
-            <button type='submit'>Add video</button>
+            <button type='submit' className="inputbutton">Add video</button>
         </Form>
         </div>
         </>)

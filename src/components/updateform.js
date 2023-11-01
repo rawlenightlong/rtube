@@ -16,7 +16,7 @@ function UpdateForm(props){
             
             <br></br>
 
-            <button type='submit'>Update video</button>
+            <button type='submit' className="inputbutton">Update video</button>
         </Form>
         </div>
         </>)

@@ -8,7 +8,7 @@
 - Python
 - Django Rest API / REST Framework
 - Render / Heroku
-- bit.io
+- Supabase
 - Bonus - Youtube API
 
 #### Wireframes
